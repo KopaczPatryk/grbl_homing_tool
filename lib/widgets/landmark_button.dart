@@ -11,11 +11,12 @@ class LandmarkButton extends StatelessWidget {
   }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    return TextButton.icon(
-      onPressed: onPressed,
-      icon: const Icon(Icons.home),
-      label: Text(label),
-    );
-  }
+  Widget build(BuildContext context) => SizedBox.square(
+        dimension: 100,
+        child: TextButton.icon(
+          onPressed: onPressed,
+          icon: const Icon(Icons.home),
+          label: Text(label),
+        ),
+      );
 }
