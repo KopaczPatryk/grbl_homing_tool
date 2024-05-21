@@ -1,16 +1,21 @@
 # grbl_homing_tool
 
-A new Flutter project.
+Flutter Windows project that simplifies leveling of the bed. Compatible with Ender 3 Pro v1 from 2018y.
+
+## Disclaimer
+
+I do not guarantee that its working, and I do not recommend it wont damage your hardware. Use at your own risk!
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Run build runner:
 
-A few resources to get you started if this is your first Flutter project:
+- flutter pub run build_runner build --delete-conflicting-outputs
+- launch in debug to see console
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Known issues
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Current implementation appears to have some trouble when sending data to serial port. I recommend double clicking controls for now :/
+
+Sometimes port makes printer crash, you need to reset devices firmware.
+I recommend **pronterface**
